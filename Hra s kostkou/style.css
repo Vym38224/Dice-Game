@@ -1,0 +1,104 @@
+body{
+    background: linear-gradient(#282c34, #112f69);
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    margin: 0 auto;
+}
+h1{
+    color: #61dafb;
+    text-align: center;
+}
+.flex{
+    display: flex;
+    flex-direction: row;
+}
+.flex-column{
+    flex-direction: column;
+}
+.flex-player{
+    margin:50% auto;
+    margin-top:0;
+    align-items: center;
+}
+.flex-cube{
+    margin: 0 auto;
+    margin-top: 5%;
+}
+.score{
+    color: black;
+    font-size: 1.5em;
+    text-align: center;
+    margin:0.5em;
+}
+h2, p{padding: 1em;}
+.players-score{
+    border: 1px solid #61dafb;
+    border-radius: 5px;
+    background-color: #729199;
+}
+.a-around{
+    color: #61dafb;
+    padding: 0.5em;
+    margin: 0.5em;
+    text-align: center;
+}
+.btn{
+    background-color: #61dafb;
+    color: black;
+    padding: 1.6em;
+    padding-left:2.5em;
+    padding-right:2.5em;
+    margin-top: 1em;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+.btn:first-child{
+    margin-top: 15em;
+}
+.btn-roll:hover, .btn-save:hover, .btn-new:hover {
+    background-color: #04a1c4; 
+    border: 1px solid white;
+}
+.dice-roll-animation {
+    animation: rollDice 1s ease-in-out;
+}
+.win-player{
+    background-color: yellow;
+    border: 3px solid gold;
+}
+.lose-player{
+    background-color: red;
+    border: 3px solid grey;
+}
+footer{
+    bottom: 0;
+    width: 100%;
+    background-color: none;
+    color: white;
+    text-align: center;
+}
+  
+@keyframes rollDice {
+15% {
+    transform: rotate(-10deg) translateX(-40px);
+}
+30% {
+    transform: rotate(10deg) translate(40px);
+}
+45% {
+    transform: rotate(-5deg) translateX(-20px);
+}
+60% {
+    transform: rotate(5deg) translateX(20px);
+}
+75% {
+    transform: rotate(-2deg) translateX(-3px);
+}
+90% {
+    transform: rotate(2deg) translateX(3px);
+}
+100% {
+    transform: rotate(0) translateX(0);
+}
+}

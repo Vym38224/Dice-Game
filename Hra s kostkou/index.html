@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hra s kostkou</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Hra s kostkou</h1>
+    <div class="flex">
+        <div class="flex flex-player flex-column">
+            <h2 class="players-score player1">Hráč 1</h2>
+            <p class="players-score"> získané skóre: <span class="score save-score1">0</span></p>
+            <p class="a-around"> aktuální skóre: <span class="current-score1">0</span></p>
+        </div>
+        <div class="flex flex-cube flex-column">
+            <img class="dice dice-roll-animation" src="podklady/dice1.png" alt="" height= 150>
+            <div class="flex flex-column">
+                <button class="btn btn-roll">Hodit kostkou</button>
+                <button class="btn btn-save">Ulož skóre</button>
+                <button class="btn btn-new">Nová hra</button>
+            </div>
+        </div>
+        <div class=" flex flex-player flex-column">
+            <h2 class="players-score player2">Hráč 2</h2>
+            <p class="players-score"> získané skóre: <span class="score save-score2">0</span></p>
+            <p class="a-around"> aktuální skóre: <span class="current-score2">0</span></p>
+        </div>
+    </div>
+    <footer>
+        <h2>Pravidla hry</h2>
+        <p>Hraje se s jednou kostkou. Hráči střídavě hází kostkou.
+            Hráč může hodit kostkou libovolně dlouho, dokud nepadne 1.
+            Pokud hráč hodí 1, ztrácí všechny body, které získal v daném
+            kole. Pokud hráč stiskne tlačítko "Ulož skóre", uloží si body
+            z daného kola. Hra končí, když hráč dosáhne 100 bodů.</p>
+    </footer>
+</body>
+<script src="script.js"></script>
+</html>
